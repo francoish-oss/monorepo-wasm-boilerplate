@@ -1,0 +1,27 @@
+{
+  "name": "base",
+  "image": "",
+
+  "features": {
+    "ghcr.io/devcontainers/features/rust:1": {
+      "version": "latest",
+      "profile": "minimal",
+    },
+    "ghcr.io/devcontainers-community/features/tinygo:1": {
+      "version": "latest",
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts",
+      "pnpmVersion": "latest",
+    },
+    "ghcr.io/devcontainers-extra/features/cmake:1": {},
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installBuildEssential": true,
+    },
+  },
+
+  "updateContentCommand": "chmod +x ./postinstall.sh",
+  "postCreateCommand": "./postinstall.sh",
+  
+  "remoteUser": "vscode",
+}
