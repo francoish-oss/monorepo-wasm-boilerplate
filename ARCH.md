@@ -21,12 +21,12 @@ my-project/
 
 ## The Concepts: The 10,000-foot view
 
-* **What is an Adapter?** The glue. It translates between the messy outside world (HTTP, databases) and your pristine core logic. Primary adapters *drive* the core (inbound); Secondary adapters are *driven by* the core (outbound).
+* **What is an Adapter?** The glue. It translates between the messy outside world (HTTP, databases) and your pristine core logic. Primary adapters *drive* the core (inbound); Secondary adapters are *driven by* the core (outbound). [Read more + Example about Adapter](./src/adapter/ADAPTER.MD)
 * **What is a Client?** The consumer. It’s the Astro frontend, the CLI tool, or the mobile app that actually calls your Wasm component to get things done.
-* **What is a Contract?** The absolute truth. Your WIT files or OpenAPI specs. If it's not defined here, it doesn't exist. It forms the unbreakable boundary of your component.
-* **What is the Core?** The brain. Pure business logic. It has zero idea what an HTTP request or IndexedDB is, and it should stay that way. *(See `CORE.MD` for the deep dive).*
-* **What is a Host?** The runtime environment. The engine (like Wasmtime or a browser) that actually spins up the Wasm module.
-* **What is a Lib?** (Not a political joke, I promise). Dumb utilities. These are dependencies that don't know or care about your business rules—think loggers, date-parsers, or serialization tools.
+* **What is a Contract?** The absolute truth. Your WIT files or OpenAPI specs. If it's not defined here, it doesn't exist. It forms the unbreakable boundary of your component. [Read more + Example about a Contract](./src/contracts/CONTRACT.MD)
+* **What is the Core?** The brain. Pure business logic. It has zero idea what an HTTP request or IndexedDB is, and it should stay that way. [Read more + Example about buisness logic](./src/core/CORE.MD)
+* **What is a Host?** The runtime environment. The engine (like Wasmtime or a browser or a cloud configuration) that actually spins up the Wasm module.
+* **What is a Lib?** (Not a political joke, I promise). Dumb utilities. These are dependencies that don't know or care about your business rules—think loggers, date-parsers, or serialization tools. [Read more + Example about buisness logic](./src/libs/LIBS.MD)
 
 ## Folder structure hello world
 ```text
