@@ -20,3 +20,5 @@ else
 fi
 
 echo "🎉 Post-install setup complete!"
+
+npm install -g assemblyscript

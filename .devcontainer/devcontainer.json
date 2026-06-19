@@ -1,7 +1,8 @@
 {
   "name": "base",
-  "image": "",
-
+  "build": {
+    "dockerfile": "Dockerfile",
+  },
   "features": {
     "ghcr.io/devcontainers/features/rust:1": {
       "version": "latest",
@@ -22,6 +23,8 @@
 
   "updateContentCommand": "chmod +x ./postinstall.sh",
   "postCreateCommand": "./postinstall.sh",
-  
+
   "remoteUser": "vscode",
 }
+
+//And do i need something for AssemblyScript ?
