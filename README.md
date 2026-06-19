@@ -20,6 +20,7 @@ It lets me do what I love faster: confidently building real features for real-wo
 
 * `define-a-core-business-service`
 * `implement-a-core-business-service`
+
 * `define-a-shared-service-interface`
 * `implement-a-shared-service-interface`
 
