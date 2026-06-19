@@ -22,3 +22,7 @@ fi
 echo "🎉 Post-install setup complete!"
 
 npm install -g assemblyscript
+
+curl -LO https://github.com/tinygo-org/tinygo/releases/download/v0.35.0/tinygo_0.35.0_amd64.deb
+sudo dpkg -i tinygo_0.35.0_amd64.deb
+rm tinygo_0.35.0_amd64.deb
