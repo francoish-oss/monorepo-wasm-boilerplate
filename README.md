@@ -24,10 +24,12 @@ It lets me do what I love faster: confidently building real features for real-wo
 * `define-a-shared-service-interface`
 * `implement-a-shared-service-interface`
 
+* `define-a-shared-service-interface`
+
 ## Advice on LLM Usage
 ### Active LLM Usage (Be Careful)
 Please don't use LLMs on layers of this architecture where the code isn't repetitive. Think of LLMs as Plop.js on steroids.
-Hosts, Clients, and Adapters are often way too specific to let an LLM handle safely. A client could be an Astro page with its own specific set of rules, hooks, and quirks.
+Hosts, Clients, and Adapters are often way too specific to let an LLM handle safely. A client could be an Astro page with its own specific set of rules, hooks, and quirks. (Maybe http adapter and sql if clear)
 ### Passive LLM Usage (Spam It)
 If a quick LLM prompt acts as a sanity checker or linter for a developer, it's an incredible tool in my opinion :).
 This is especially true in cross-language WebAssembly codebases.
