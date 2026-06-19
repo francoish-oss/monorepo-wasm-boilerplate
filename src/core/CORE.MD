@@ -1,3 +1,5 @@
+TO BE VALIDATED
+
 # The Core
 
 The core is where your application actually lives. It is isolated, framework-agnostic, and purely focused on business rules. If you swap your database or change your UI framework, the Core should not require a single line of code changed.
