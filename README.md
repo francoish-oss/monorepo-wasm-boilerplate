@@ -18,13 +18,17 @@ It lets me do what I love faster: confidently building real features for real-wo
 
 ### Skills implemented
 
+* `initialize-folder-of-an-http-adapter`
+* `initialize-folder-of-an-spin-adapter`
+* `initialize-folder-of-an-sql-adapter`
+
+
 * `define-a-core-business-service`
 * `implement-a-core-business-service`
 
 * `define-a-shared-service-interface`
 * `implement-a-shared-service-interface`
 
-* `define-a-shared-service-interface`
 
 ## Advice on LLM Usage
 ### Active LLM Usage (Be Careful)
